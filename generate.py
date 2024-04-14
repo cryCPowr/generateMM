@@ -20,8 +20,8 @@ def buat_EVM(num_accounts):
         account = web3.eth.account.from_mnemonic(phrase)
         result += f"Akun Ke {i + 1}\n"
         result += "Frase pemulihan: " + phrase + "\n"
-        result += "Alamat Ethereum: " + account.address + "\n"
         result += "Kunci privat: " + account._private_key.hex() + "\n\n"
+        result += "Alamat Ethereum: " + account.address + "\n"
 
     return result
 
